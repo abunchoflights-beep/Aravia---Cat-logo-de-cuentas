@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { createAccountsApi } from "./api/accounts-api";
+import { apiUrl } from "./api/config";
+import { createHttpClient } from "./api/http-client";
+import { AccountsPage } from "./features/accounts/AccountsPage";
 
-createRoot(document.getElementById('root')!).render(
+const accountsApi = createAccountsApi(createHttpClient(apiUrl));
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <AccountsPage api={accountsApi} />
   </StrictMode>,
-)
+);
