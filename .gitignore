@@ -24,3 +24,7 @@ npm-debug.log*
 coverage
 .nyc_output
 temp
+.vitest/
+
+# orquestacion / loop
+.loop/

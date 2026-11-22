@@ -2,10 +2,10 @@
 
 Backend y frontend listos para correr, ya conectados entre sí. Es el punto de partida de la prueba, para que no gastes tiempo en instalar y configurar.
 
-| Carpeta | Qué hay | Puerto |
-|---------|---------|:------:|
-| `api/` | NestJS con TypeScript, con CORS habilitado hacia el front | 3000 |
-| `web/` | React con Vite y TypeScript | 5173 |
+| Carpeta | Qué hay                                                   | Puerto |
+| ------- | --------------------------------------------------------- | :----: |
+| `api/`  | NestJS con TypeScript, con CORS habilitado hacia el front |  3000  |
+| `web/`  | React con Vite y TypeScript                               |  5173  |
 
 Trae **solo lo que generan los CLI de Nest y de Vite**. No hay estructura de capas, ni entidades, ni interfaces de repositorio, ni librería de componentes, ni manejo de estado. Esas decisiones son tuyas y son parte de lo que se evalúa, así que cuéntanos en voz alta por qué las tomas. Si quieres reorganizar las carpetas, hazlo y explica por qué.
 
@@ -21,20 +21,20 @@ npm install     # instala la raíz, api/ y web/
 npm run dev     # levanta los dos a la vez
 ```
 
-Abre http://localhost:5173. Si ves *La API respondió: Hello World!*, el frontend está hablando con el backend y puedes empezar.
+Abre http://localhost:5173. Si ves _La API respondió: Hello World!_, el frontend está hablando con el backend y puedes empezar.
 
 Esa pantalla existe solo para comprobar la conexión. Bórrala y construye lo tuyo.
 
 ## Scripts
 
-| Script | Qué hace |
-|--------|----------|
-| `npm run dev` | Levanta la API y el front juntos, en modo watch |
-| `npm run dev:api` | Solo la API |
-| `npm run dev:web` | Solo el front |
-| `npm run build` | Compila los dos |
-| `npm test` | Corre las pruebas de la API con Vitest |
-| `npm run lint` | Revisa los dos con oxlint |
+| Script            | Qué hace                                        |
+| ----------------- | ----------------------------------------------- |
+| `npm run dev`     | Levanta la API y el front juntos, en modo watch |
+| `npm run dev:api` | Solo la API                                     |
+| `npm run dev:web` | Solo el front                                   |
+| `npm run build`   | Compila los dos                                 |
+| `npm test`        | Corre las pruebas de la API con Vitest          |
+| `npm run lint`    | Revisa los dos con oxlint                       |
 
 ## Configuración
 
