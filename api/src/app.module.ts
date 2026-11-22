@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller.js';
-import { AppService } from './app.service.js';
+import { AccountsModule } from './modules/accounts/infrastructure/accounts.module.js';
 
+/** Root module: composes the bounded contexts of the API. */
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [AccountsModule],
 })
 export class AppModule {}
